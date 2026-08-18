@@ -18,9 +18,13 @@ export default function Sidebar() {
             <FolderOpen className="w-5 h-5" />
             Dashboard
           </Link>
-          <Link href="/dashboard/customers" className="flex items-center gap-3 px-3 py-2 rounded-lg bg-blue-900/20 text-blue-400 font-medium">
+          <Link href="/dashboard/customers" className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-800 text-gray-300 hover:text-white transition-colors">
             <Users className="w-5 h-5" />
             Customers
+          </Link>
+          <Link href="/dashboard/albums" className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-800 text-gray-300 hover:text-white transition-colors">
+            <Camera className="w-5 h-5" />
+            Albums
           </Link>
           <Link href="/dashboard/orders" className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-800 text-gray-300 hover:text-white transition-colors">
             <CreditCard className="w-5 h-5" />
