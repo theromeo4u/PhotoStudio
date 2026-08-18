@@ -44,3 +44,11 @@ model Order {
   customerId  String
   customer    Customer @relation(fields: [customerId], references: [id], onDelete: Cascade)
 }
+
+model Settings {
+  id                  String   @id @default("default")
+  googleRefreshToken  String?
+  googleAccessToken   String?
+  tokenExpiry         DateTime?
+  updatedAt           DateTime @updatedAt
+}
