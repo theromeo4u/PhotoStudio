@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, Monitor, Smartphone, Apple, CheckCircle2, XCircle, Users, Image as ImageIcon, CreditCard, ChevronRight, Camera, Mail, Phone, MapPin } from 'lucide-react';
+import { Download, Monitor, Smartphone, Apple, CheckCircle2, XCircle, Users, Image as ImageIcon, CreditCard, ChevronRight, Camera, Mail, Phone, MapPin, ScanFace, BookOpen, Clock, QrCode } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -60,27 +60,77 @@ export default function Home() {
             <p className="mt-4 text-lg text-gray-400">Powerful features designed specifically for modern photography businesses.</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="p-8 bg-gray-900 rounded-2xl border border-gray-800 hover:shadow-lg hover:shadow-blue-900/10 transition">
               <div className="w-14 h-14 bg-blue-900/30 text-blue-400 rounded-xl flex items-center justify-center mb-6 border border-blue-800/30">
                 <ImageIcon className="w-7 h-7" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Smart Photo Selection</h3>
-              <p className="text-gray-400">Let your clients select their favorite photos online with ease. No more messy email threads or USB drives.</p>
+              <p className="text-gray-400">Easy selection interface with zooming, rotating, and downloading. Categorize photos with Important, Selected, and Remove marks securely via Album ID password.</p>
             </div>
+            
             <div className="p-8 bg-gray-900 rounded-2xl border border-gray-800 hover:shadow-lg hover:shadow-indigo-900/10 transition">
               <div className="w-14 h-14 bg-indigo-900/30 text-indigo-400 rounded-xl flex items-center justify-center mb-6 border border-indigo-800/30">
+                <ScanFace className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Face Recognition</h3>
+              <p className="text-gray-400">Automatically organize and sort photos by recognizing faces, allowing clients to instantly find pictures of themselves and their families.</p>
+            </div>
+
+            <div className="p-8 bg-gray-900 rounded-2xl border border-gray-800 hover:shadow-lg hover:shadow-pink-900/10 transition">
+              <div className="w-14 h-14 bg-pink-900/30 text-pink-400 rounded-xl flex items-center justify-center mb-6 border border-pink-800/30">
+                <BookOpen className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">E-Album Flipbook</h3>
+              <p className="text-gray-400">Deliver stunning digital albums with realistic flipbook animations. Your clients can share these easily via view-only links without unauthorized downloads.</p>
+            </div>
+
+            <div className="p-8 bg-gray-900 rounded-2xl border border-gray-800 hover:shadow-lg hover:shadow-purple-900/10 transition">
+              <div className="w-14 h-14 bg-purple-900/30 text-purple-400 rounded-xl flex items-center justify-center mb-6 border border-purple-800/30">
                 <Users className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">CRM & Team Management</h3>
-              <p className="text-gray-400">Manage your clients, leads, and team members all in one centralized dashboard.</p>
+              <h3 className="text-xl font-bold mb-3 text-white">Customer Management</h3>
+              <p className="text-gray-400">Manage customers and their payments directly. Say goodbye to messy notebooks and keep all customer data safe and accessible everywhere.</p>
             </div>
-            <div className="p-8 bg-gray-900 rounded-2xl border border-gray-800 hover:shadow-lg hover:shadow-green-900/10 transition">
-              <div className="w-14 h-14 bg-green-900/30 text-green-400 rounded-xl flex items-center justify-center mb-6 border border-green-800/30">
+
+            <div className="p-8 bg-gray-900 rounded-2xl border border-gray-800 hover:shadow-lg hover:shadow-teal-900/10 transition">
+              <div className="w-14 h-14 bg-teal-900/30 text-teal-400 rounded-xl flex items-center justify-center mb-6 border border-teal-800/30">
+                <CheckCircle2 className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Order Management</h3>
+              <p className="text-gray-400">Track and manage every order for all your customers seamlessly across our mobile application and desktop software.</p>
+            </div>
+
+            <div className="p-8 bg-gray-900 rounded-2xl border border-gray-800 hover:shadow-lg hover:shadow-yellow-900/10 transition">
+              <div className="w-14 h-14 bg-yellow-900/30 text-yellow-400 rounded-xl flex items-center justify-center mb-6 border border-yellow-800/30">
                 <CreditCard className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Billing & Quotations</h3>
-              <p className="text-gray-400">Create professional quotes, send invoices, and accept payments online securely.</p>
+              <h3 className="text-xl font-bold mb-3 text-white">Make Extra Income</h3>
+              <p className="text-gray-400">Offer paid photo downloads to customers directly during photo selection. Easily transfer bulk downloaded photo amounts right to your bank account.</p>
+            </div>
+
+            <div className="p-8 bg-gray-900 rounded-2xl border border-gray-800 hover:shadow-lg hover:shadow-cyan-900/10 transition">
+              <div className="w-14 h-14 bg-cyan-900/30 text-cyan-400 rounded-xl flex items-center justify-center mb-6 border border-cyan-800/30">
+                <Download className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Raw Photo Support</h3>
+              <p className="text-gray-400">Full support for Raw photos alongside high-quality exports. Easily get the original selected photos back for final editing.</p>
+            </div>
+
+            <div className="p-8 bg-gray-900 rounded-2xl border border-gray-800 hover:shadow-lg hover:shadow-green-900/10 transition">
+              <div className="w-14 h-14 bg-green-900/30 text-green-400 rounded-xl flex items-center justify-center mb-6 border border-green-800/30">
+                <QrCode className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">My Pay QR</h3>
+              <p className="text-gray-400">Send fixed-amount UPI QR codes to your clients. Prevent short payments; clients scan and pay exactly the invoiced amount.</p>
+            </div>
+
+            <div className="p-8 bg-gray-900 rounded-2xl border border-gray-800 hover:shadow-lg hover:shadow-orange-900/10 transition">
+              <div className="w-14 h-14 bg-orange-900/30 text-orange-400 rounded-xl flex items-center justify-center mb-6 border border-orange-800/30">
+                <Clock className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Automated Reminders</h3>
+              <p className="text-gray-400">Reduce 6-month wait times. Our system automatically reminds customers daily to complete their photo selection, accelerating your workflow.</p>
             </div>
           </div>
         </div>
